@@ -75,4 +75,8 @@ public class SearchStepsForBooking {
         System.out.println("I am pre-condition");
     }
 
+    @Given("The rating of this hotel is {double} stars")
+    public void theRatingOfThisHotelIsStars(int arg0) {
+        bookingSearchResultsPage.getSearchResultRating(arg0);
+    }
 }
